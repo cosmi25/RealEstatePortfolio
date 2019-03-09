@@ -14,7 +14,7 @@ if (process.env.NODE_ENV === "production") {
 
 app.use(routes);
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/REManager");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/RealEstatePortfolio");
 
 app.listen(PORT, function() {
   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
