@@ -1,0 +1,12 @@
+.new-btn {
+    color: #0aafaf;
+    border: 1px solid #0aafaf;
+    background-color: #0aafaf;
+    color: white;
+    text-align: center;
+    margin: auto;
+    padding: 2px;
+    width: 60%;
+    font-size: 13px;
+    border-radius: 0.55em;
+}

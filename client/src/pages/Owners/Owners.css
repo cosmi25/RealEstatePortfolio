@@ -1,0 +1,12 @@
+.horizontalLine {
+    color: yellow;
+    }
+    .pOwner {
+        /* display: flex; */
+        /* align-items: 'flex-start'; */
+    /* float: right;  */
+    /* position: relative; */
+        margin-left: 900px;;
+        /* padding: 4px; */
+        border: 1px solid black;
+    }

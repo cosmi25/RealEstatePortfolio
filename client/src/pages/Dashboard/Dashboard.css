@@ -1,0 +1,70 @@
+.newPropr {
+    width: 400px;
+    height: 325px;
+    margin-top : 20px;
+   margin-right: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    color: #0aafaf;
+    
+}
+
+.textArea {
+    width: 100%;
+    height: 150px;
+}
+
+.img {
+    height: 85px;
+    width: 150px;
+    border: 1px solid #058080;
+    border-radius: 10px;
+    margin: auto;
+}
+
+
+
+.cardContainer {
+    /* padding: 20px; */
+    /* border: 1px solid black; */
+    display: flex;
+    /* align-items: 'flex-start'; */
+    
+}
+
+.miniCard {
+    color: #0aafaf;
+    width: 470px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+.expenses {
+    background-color: #f8780f;
+    color: white;
+}
+
+.rent {
+    color: #0aafaf;
+    background-color: #0aafaf;
+    color: white;
+}
+
+
+.cashflow {
+    color: white;
+    background-color: rgb(233, 196, 102);
+}
+
+.form {
+    margin-top: 20px;
+}
+
+.heading {
+    color: #0aafaf;
+    text-align: left;
+}
+
