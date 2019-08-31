@@ -1,72 +1,62 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./Nav.css";
+import React, { Component } from 'react';
+import {
+	Collapse,
+	Navbar,
+	NavbarToggler,
+	NavbarBrand,
+	Nav,
+	NavItem,
+	NavLink,
+	UncontrolledDropdown,
+	DropdownToggle,
+	DropdownMenu,
+	DropdownItem,
+} from 'reactstrap';
 
-const Nav = () => (
-  <nav className="navbar navbar-expand-lg navbar-light bg-light">
-    <Link className="navbar-brand" to="/">
-      RE Portfolio
-    </Link>
-    <div>
-      <ul className="navbar-nav">
-        <li
-          className={
-            window.location.pathname === "/home"
-              ? "nav-item active"
-              : "nav-item"
-          }
-        >
-          <Link to="/home" className="nav-link">
-            Dashboard
-          </Link>
-        </li>
-        <li
-          className={
-            window.location.pathname === "/properties"
-              ? "nav-item active"
-              : "nav-item"
-          }
-        >
-          <Link to="/properties" className="nav-link">
-            Properties
-          </Link>
-        </li>
-        <li
-          className={
-            window.location.pathname === "/owners"
-              ? "nav-item active"
-              : "nav-item"
-          }
-        >
-          <Link to="/owners" className="nav-link">
-            Owners
-          </Link>
-        </li>
-        <li
-          className={
-            window.location.pathname === "/tenants"
-              ? "nav-item active"
-              : "nav-item"
-          }
-        >
-          <Link to="/tenants" className="nav-link">
-            Tenants
-          </Link>
-        </li>
-        {/* <li
-          className={
-            window.location.pathname === "/reports"
-              ? "nav-item active"
-              : "nav-item"
-          }
-        >
-          <Link to="/reports" className="nav-link">
-            Reports
-          </Link>
-        </li> */}
-      </ul>
-    </div>
-  </nav>
-);
+export default class TopNav extends Component {
+	state = {
+		isOpen: false,
+	};
 
-export default Nav;
+	toggle = () => {
+		this.setState({
+			isOpen: !this.state.isOpen,
+		});
+	};
+	render() {
+		return (
+			<div>
+				<Navbar color="light" light expand="md">
+					<NavbarBrand href="/">Real Estate Portfolio</NavbarBrand>
+					<NavbarToggler onClick={this.toggle} />
+					<Collapse isOpen={this.state.isOpen} navbar>
+						<Nav className="mr-auto" navbar>
+							<NavItem>
+								<NavLink href="/properties/">
+									<i className="fas fa-key" /> Properties
+								</NavLink>
+							</NavItem>
+							<NavItem>
+								<NavLink href="/dashboard">
+									<i className="fas fa-hand-holding-usd" /> &nbsp;
+									<i className="fas fa-balance-scale" /> Dashboard
+								</NavLink>
+							</NavItem>
+							<UncontrolledDropdown nav inNavbar>
+								<DropdownToggle nav caret>
+									<i className="fas fa-shapes" /> Options
+								</DropdownToggle>
+								<DropdownMenu right>
+									<DropdownItem>Option 1</DropdownItem>
+									<DropdownItem>Option 2</DropdownItem>
+									<DropdownItem divider />
+									<DropdownItem>Reset</DropdownItem>
+								</DropdownMenu>
+							</UncontrolledDropdown>
+						</Nav>
+					</Collapse>
+				</Navbar>
+			</div>
+		);
+	}
+}

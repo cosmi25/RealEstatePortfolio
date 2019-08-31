@@ -1,0 +1,23 @@
+.content {
+	text-align: left;
+}
+/* .card {
+	position: relative;
+} */
+
+.cards {
+	width: 350px;
+	/* margin-top: 20px; */
+	padding: 10px 10px 25px 10px;
+	color: #0aafaf;
+
+	border-bottom: solid 1px black;
+}
+.p {
+	color: #058080;
+}
+
+.heading {
+	text-align: center;
+	padding-bottom: 10px;
+}

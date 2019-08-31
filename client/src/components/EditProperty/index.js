@@ -1,1 +1,1 @@
-export {default} from './EditProperty';
+export { default } from './EditProperty';

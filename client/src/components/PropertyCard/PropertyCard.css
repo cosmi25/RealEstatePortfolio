@@ -1,46 +1,6 @@
-.card {
-    position: relative;
-    
+.deleteProperty {
+	float: left;
 }
-
-.content {
-    text-align: left;
+.editProperty {
+	float: right;
 }
-
-.heading {
-    text-align: center;
-    padding-bottom: 10px;
-}
-
-.close {
-    color: #0aafaf;
-    border: 1px solid #0aafaf;
-    background-color: #0aafaf;
-    color: white;
-    text-align: center;
-    margin: auto;
-    padding: 4px;
-    width: 20%;
-    font-size: 13px;
-    border-radius: 0.55em;
-}
-
-.cards {
-    width: 600px;
-    /* margin-top: 1px; */
-    padding: 10px 10px 25px 10px;
-    color: #0aafaf;
-    border-radius: 10px;
-    /* border: 1px solid #0aafaf; */
-}
-
-img-edit {
-    border: 25px solid white;
-    border-radius: 20%;
-    margin: auto;
-    height: 120px;
-}
-
-
-
-
