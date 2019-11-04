@@ -2,3 +2,4 @@ folder was pushed up to github in the repo lastUpdate
 on aug 31 2019
 
 //the repository is RealEstatePortfolio
+//it DOES NOT work the same as code from updatedPortfolio
